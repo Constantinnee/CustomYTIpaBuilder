@@ -176,6 +176,8 @@ jobs:
       - name: Build YTUHD
         run: |
           cd YTUHD
+          make libvpx   # vendor/libvpx_ios/libvpx.a
+          make dav1d    # vendor/dav1d_ios/libdav1d.a
           make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           mv packages/*.deb ${{ github.workspace }}/ytuhd.deb
 
