@@ -78,8 +78,8 @@ jobs:
            
       - name: Download iOS SDK
         run: |
-          git clone --quiet -n --depth=1 --filter=tree:0 https://github.com/theos/sdks/
-          cd sdks
+          git clone --quiet -n --depth=1 --filter=tree:0 https://github.com/xybp888/iOS-SDKs
+          cd IOS-SDKs
           git sparse-checkout set --no-cone iPhoneOS16.5.sdk
           git checkout
           mv *.sdk $THEOS/sdks
@@ -156,15 +156,6 @@ jobs:
 
       - name: Clone NoYTPremium
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/NoYTPremium.git
-
-      - name: Clone iSponsorBlock
-        run: git clone --quiet --depth=1 https://github.com/Galactic-Dev/iSponsorBlock.git
-
-      - name: Build iSponsorBlock
-        run: |
-          cd iSponsorBlock
-          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-          mv packages/*.deb ${{ github.workspace }}/isb.deb
 
       - name: Build NoYTPremium
         run: |
