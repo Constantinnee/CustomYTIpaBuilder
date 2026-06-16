@@ -157,9 +157,17 @@ jobs:
       - name: Clone IAmYouTube
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/IAmYouTube.git
 
+      - name: Clone NoYTPremium
+        run: git clone --quiet --depth=1 https://github.com/PoomSmart/NoYTPremium.git
+
       # - name: Clone VolumeBoostYT
       #   if: ${{ inputs.volboost }}
       #   run: git clone --quiet --depth=1 https://github.com/VasirakCalgux/VolumeBoostYT.git
+      - name: Build NoYTPremium
+        run: |
+          cd NoYTPremium
+          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          mv packages/*.deb ${{ github.workspace }}/nytp.deb
       
       - name: Build YouTube-X
         run: |
