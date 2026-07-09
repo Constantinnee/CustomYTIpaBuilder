@@ -105,6 +105,9 @@ jobs:
             cp -r "$THEOS/include/YouTubeHeader" "$THEOS/include/YTHeaders"
            fi
 
+      - name: Clone YTUHD
+        run: git clone --quiet --depth=1 https://github.com/Tonwalter888/YTUHD.git
+
       - name: Clone PSHeader
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/PSHeader.git $THEOS/include/PSHeader
 
@@ -153,6 +156,12 @@ jobs:
 
       - name: Clone NoYTPremium
         run: git clone --quiet --depth=1 https://github.com/PoomSmart/NoYTPremium.git
+
+      - name: Build YTUHD
+        run: |
+          cd YTUHD
+          make clean package DEBUG=0 FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          mv packages/*.deb ${{ github.workspace }}/ytuhd.deb
 
       - name: Build NoYTPremium
         run: |
