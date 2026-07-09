@@ -83,6 +83,8 @@ jobs:
           git sparse-checkout set --no-cone iPhoneOS18.6.sdk
           git checkout
           mv *.sdk $THEOS/sdks
+          cd ${{ github.workspace }}/theos/vendor/logos
+          git checkout a62370066a97e36d59b200a9fa10c5091f5e8972
 
       - name: Install cyan and tbd
         run: |
