@@ -26,5 +26,4 @@
     <p>Try one of these:</p>
       <li>Sign out from your Google account and watch videos without signing in.</li>
       <li>Use your other Google accounts. If you haven't got any, create a new one.</li>
-      <li>Turns on <strong>Fix playback issues</strong> in YTUHD settings.</li>
 </details>
