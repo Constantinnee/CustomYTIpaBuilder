@@ -3,7 +3,7 @@ This is a fork repo from YTLite but adds more tweaks similar to YTLitePlus for t
 If you have any problems, feel free to open issues!
 
 > [!WARNING]
-> Starting from YTLite 5.2, you have to be a member in the developer's [Boosty](https://boosty.to/dayanch96) or [His website](https://dvntm.com/account). 
+> Starting from YTLite 5.2, you have to be a member in [his Boosty](https://boosty.to/dayanch96) or [his website](https://dvntm.com/account). 
 > Otherwise, you **CAN'T** use YTLite.
 > If you can't / don't want to be a member, uses YTLite version 5.2b4.
 
