@@ -13,7 +13,7 @@ If you have any problems, feel free to open issues!
 
 ## Main features
 - [YTLite](https://github.com/dayanch96/YTLite) - eg. Download Videos, No ads, Background Playback
-- [YTABConfig](https://github.com/PoomSmart/YTABConfig) - Configures A/B settings
+- [YTSilentVote](https://github.com/PoomSmart/YTSilentVote) - Remove like/dislike votes
 - [YouShare](https://github.com/Tonwalter888/YouShare) - Copy video URL faster from video overlay
 - [Gonerino](https://github.com/castdrian/Gonerino) - Filter videos/channels/keywords that you don't want them to show up on your feeds
 - [YouGetCaption](https://github.com/PoomSmart/YouGetCaption) - Copy video captions from video overlay
